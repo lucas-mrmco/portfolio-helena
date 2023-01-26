@@ -738,37 +738,6 @@ h5 {
   margin-bottom: -150%;
 }
 
-/* Contact page */
-
-.reseaux > a {
-  font-size: 1.3vw;
-  font-family: "Work Sans";
-  color: rgb(47, 47, 47);
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: 1vw;
-  text-decoration: none;
-}
-
-.reseaux > p {
-  position: absolute;
-  font-size: 5vw;
-  font-family: "Work Sans";
-  color: rgb(47, 47, 47);
-}
-
-.select {
-  opacity: 0.6;
-}
-
-.reseaux {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin-top: 10vw;
-}
-
-/* Fin contact page */
-
 .client > svg {
   margin-top: -30%;
   margin-left: -4%;
@@ -1052,3 +1021,67 @@ label,
   margin-left: 30vw;
   padding: 2%;
 }
+
+/* Page contact */
+
+form {
+  width: 350px;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+form > h1 {
+  font-size: 2vw;
+  text-align: center;
+  margin: 30px auto;
+  margin-top: 35%;
+}
+
+input {
+  margin: 20px 0px;
+  width: 300px;
+  border: none;
+  padding: 5px 0;
+  border-bottom: solid 1px #4f7b92;
+  color: #4f7b92;
+}
+
+button {
+  border: none;
+  background-color: #4f7b92;
+  color: white;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  box-shadow: 4px 4px 5px #999999;
+  border-radius: 10px;
+}
+
+.reseaux > a {
+  font-size: 1vw;
+  font-family: "Work Sans";
+  color: rgb(47, 47, 47);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10%;
+}
+
+.select {
+  opacity: 0.6;
+}
+
+.reseaux {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 8vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 1;
+    --num-rows: 3;
+  }
+}
+
+/* Fin contact page */
